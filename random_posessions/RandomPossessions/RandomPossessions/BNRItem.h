@@ -8,13 +8,23 @@
 
 #import <Foundation/Foundation.h>
 
+// The interface is where we define a class' instance variables
+// and methods. Methods are only defined here while the logic
+// for methods are written in th .m file
 @interface BNRItem : NSObject
+
+// Here are the instance variables
 {
     NSString *itemName;
     NSString *serialNumber;
     int valueInDollars;
     NSDate *dateCreated;
 }
+
+// And these are the methods
+// Here we have getters and setters. While string setter methods begin
+// with set i.e. setItemName, a string getter method is simply the name
+// of it's instance variable.
 - (void)setItemName: (NSString *)str;
 - (NSString *)itemName;
 
