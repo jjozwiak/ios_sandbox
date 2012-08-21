@@ -21,6 +21,11 @@
     NSDate *dateCreated;
 }
 
+// Here we will define a designated initializer
+- (id)initWithItemName:(NSString *)name
+        valueInDollars:(int)value
+          serialNumber:(NSString *)sNumber;
+
 // And these are the methods
 // Here we have getters and setters. While string setter methods begin
 // with set i.e. setItemName, a string getter method is simply the name
