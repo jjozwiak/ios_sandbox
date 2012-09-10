@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 45;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -122,8 +122,7 @@
 				LastUpgradeCheck = 0430;
 			};
 			buildConfigurationList = BDE23A0615E41C7C001B157F /* Build configuration list for PBXProject "RandomPossessions" */;
-			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
+			compatibilityVersion = "Xcode 3.1";
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
@@ -235,6 +234,7 @@
 				BDE23A1D15E41C7C001B157F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

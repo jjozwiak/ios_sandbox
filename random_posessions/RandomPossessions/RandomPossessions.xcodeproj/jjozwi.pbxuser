@@ -1,0 +1,81 @@
+// !$*UTF8*$!
+{
+	BDE23A0315E41C7C001B157F /* Project object */ = {
+		activeBuildConfigurationName = Debug;
+		activeExecutable = EDD128F315E44D0E00919A5C /* RandomPossessions */;
+		activeTarget = BDE23A0B15E41C7C001B157F /* RandomPossessions */;
+		codeSenseManager = EDD128F815E44D0E00919A5C /* Code sense */;
+		executables = (
+			EDD128F315E44D0E00919A5C /* RandomPossessions */,
+		);
+		perUserDictionary = {
+			PBXConfiguration.PBXFileTableDataSource3.PBXFileTableDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					341,
+					20,
+					48.16259765625,
+					43,
+					43,
+					20,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXFileDataSource_FiletypeID,
+					PBXFileDataSource_Filename_ColumnID,
+					PBXFileDataSource_Built_ColumnID,
+					PBXFileDataSource_ObjectSize_ColumnID,
+					PBXFileDataSource_Errors_ColumnID,
+					PBXFileDataSource_Warnings_ColumnID,
+					PBXFileDataSource_Target_ColumnID,
+				);
+			};
+			PBXPerProjectTemplateStateSaveDate = 367283470;
+			PBXWorkspaceStateSaveDate = 367283470;
+		};
+		sourceControlManager = EDD128F715E44D0E00919A5C /* Source Control */;
+		userBuildSettings = {
+		};
+	};
+	BDE23A0B15E41C7C001B157F /* RandomPossessions */ = {
+		activeExec = 0;
+		executables = (
+			EDD128F315E44D0E00919A5C /* RandomPossessions */,
+		);
+	};
+	EDD128F315E44D0E00919A5C /* RandomPossessions */ = {
+		isa = PBXExecutable;
+		activeArgIndices = (
+		);
+		argumentStrings = (
+		);
+		autoAttachOnCrash = 1;
+		breakpointsEnabled = 1;
+		configStateDict = {
+		};
+		customDataFormattersEnabled = 1;
+		debuggerPlugin = GDBDebugging;
+		disassemblyDisplayState = 0;
+		enableDebugStr = 1;
+		environmentEntries = (
+		);
+		executableSystemSymbolLevel = 0;
+		executableUserSymbolLevel = 0;
+		libgmallocEnabled = 0;
+		name = RandomPossessions;
+		sourceDirectories = (
+		);
+	};
+	EDD128F715E44D0E00919A5C /* Source Control */ = {
+		isa = PBXSourceControlManager;
+		fallbackIsa = XCSourceControlManager;
+		isSCMEnabled = 0;
+		scmConfiguration = {
+		};
+	};
+	EDD128F815E44D0E00919A5C /* Code sense */ = {
+		isa = PBXCodeSenseManager;
+		indexTemplatePath = "";
+	};
+}
