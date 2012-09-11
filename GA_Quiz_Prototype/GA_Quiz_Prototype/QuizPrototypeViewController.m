@@ -34,11 +34,11 @@
     
     [answers addObject:answer];
     
-    for (int i = 0; i < [answers count]; i++) {
+    /*for (int i = 0; i < [answers count]; i++) {
         
         NSLog(@"This is the answer %@",[answers objectAtIndex:i]);
         
-    }
+    }*/
     
     NSLog(@"%@", answers);
 }

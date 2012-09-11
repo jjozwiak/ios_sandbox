@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="1.1" toolsVersion="2182" systemVersion="11E53" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" initialViewController="2">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="2549" systemVersion="12B19" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" initialViewController="2">
     <dependencies>
         <deployment defaultVersion="1296" identifier="iOS"/>
-        <development defaultVersion="4200" identifier="xcode"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1181"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1498"/>
     </dependencies>
     <scenes>
         <!--Quiz Prototype View Controller-->
@@ -97,6 +96,16 @@
                                     <action selector="answerPressed:" destination="2" eventType="touchUpInside" id="1MO-E8-B7L"/>
                                 </connections>
                             </button>
+                            <tabBar contentMode="scaleToFill" id="PNe-F2-DT4">
+                                <rect key="frame" x="0.0" y="955" width="768" height="49"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <items>
+                                    <tabBarItem title="Item" id="zrI-oV-56f"/>
+                                    <tabBarItem systemItem="favorites" id="WOD-c6-cjM"/>
+                                    <tabBarItem systemItem="more" id="4R5-5p-d28"/>
+                                </items>
+                            </tabBar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -109,7 +118,6 @@
             <source key="sourceIdentifier" type="project" relativePath="./Classes/QuizPrototypeViewController.h"/>
             <relationships>
                 <relationship kind="action" name="answerPressed:" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="answer" candidateClass="UILabel"/>
             </relationships>
         </class>
     </classes>
