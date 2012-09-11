@@ -10,7 +10,8 @@
 
 @interface QuizPrototypeViewController : UIViewController
 {
-    IBOutlet UILabel *answer;
+    NSString *answer;
+    NSMutableArray *answers;
 }
 
 - (IBAction)answerPressed:(UIButton *)sender;

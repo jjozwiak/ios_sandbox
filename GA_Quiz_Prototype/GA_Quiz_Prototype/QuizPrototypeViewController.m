@@ -10,31 +10,44 @@
 
 @interface QuizPrototypeViewController ()
 
+
 @end
 
 @implementation QuizPrototypeViewController
 
+//Ok you clearly don't use init in a view controller.
+//Any initialization you need to run should go in the viewDidLoad
+//This took a LONG time to figure out but I will NOT forget it!!!!!!
+
+/*- (id)init
+{
+    self = [super init];
+    if (self) {
+        //answers = [[NSMutableArray alloc] init ];
+    }
+    return self;
+}*/
 
 - (IBAction)answerPressed:(UIButton *)sender
 {
-    NSMutableArray *answers = [[NSMutableArray alloc] init];
-    NSString *answer = [[sender titleLabel] text];
+    answer = [[sender titleLabel] text];
     
     [answers addObject:answer];
     
     for (int i = 0; i < [answers count]; i++) {
-        NSLog(@"%@", [answers objectAtIndex:i]);
+        
+        NSLog(@"This is the answer %@",[answers objectAtIndex:i]);
+        
     }
     
-    //NSString *answer = [[sender titleLabel] text];
-    
-    //NSLog(answer);
+    NSLog(@"%@", answers);
 }
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    answers = [[NSMutableArray alloc] init ];
 }
 
 - (void)viewDidUnload
