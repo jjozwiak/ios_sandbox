@@ -13,6 +13,10 @@
 		EDF57CBA160ABBB0005EE2CE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = EDF57CB8160ABBB0005EE2CE /* InfoPlist.strings */; };
 		EDF57CBC160ABBB0005EE2CE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EDF57CBB160ABBB0005EE2CE /* main.m */; };
 		EDF57CC0160ABBB0005EE2CE /* HypnoAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EDF57CBF160ABBB0005EE2CE /* HypnoAppDelegate.m */; };
+		EDF57CC8160ABC98005EE2CE /* HypnoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EDF57CC7160ABC98005EE2CE /* HypnoViewController.m */; };
+		EDF57CCB160ABD71005EE2CE /* HypnosisView.m in Sources */ = {isa = PBXBuildFile; fileRef = EDF57CCA160ABD71005EE2CE /* HypnosisView.m */; };
+		EDF57CCE160AC211005EE2CE /* TimeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EDF57CCD160AC211005EE2CE /* TimeViewController.m */; };
+		EDF57CD4160AC911005EE2CE /* TimeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EDF57CD3160AC911005EE2CE /* TimeViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +30,13 @@
 		EDF57CBD160ABBB0005EE2CE /* HypnoTime-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HypnoTime-Prefix.pch"; sourceTree = "<group>"; };
 		EDF57CBE160ABBB0005EE2CE /* HypnoAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HypnoAppDelegate.h; sourceTree = "<group>"; };
 		EDF57CBF160ABBB0005EE2CE /* HypnoAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HypnoAppDelegate.m; sourceTree = "<group>"; };
+		EDF57CC6160ABC98005EE2CE /* HypnoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HypnoViewController.h; path = ../HypnoViewController.h; sourceTree = "<group>"; };
+		EDF57CC7160ABC98005EE2CE /* HypnoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HypnoViewController.m; path = ../HypnoViewController.m; sourceTree = "<group>"; };
+		EDF57CC9160ABD71005EE2CE /* HypnosisView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HypnosisView.h; path = ../HypnosisView.h; sourceTree = "<group>"; };
+		EDF57CCA160ABD71005EE2CE /* HypnosisView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HypnosisView.m; path = ../HypnosisView.m; sourceTree = "<group>"; };
+		EDF57CCC160AC211005EE2CE /* TimeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimeViewController.h; sourceTree = "<group>"; };
+		EDF57CCD160AC211005EE2CE /* TimeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimeViewController.m; sourceTree = "<group>"; };
+		EDF57CD3160AC911005EE2CE /* TimeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TimeViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,8 +84,15 @@
 			isa = PBXGroup;
 			children = (
 				EDF57CBE160ABBB0005EE2CE /* HypnoAppDelegate.h */,
+				EDF57CC6160ABC98005EE2CE /* HypnoViewController.h */,
+				EDF57CC9160ABD71005EE2CE /* HypnosisView.h */,
+				EDF57CCA160ABD71005EE2CE /* HypnosisView.m */,
+				EDF57CC7160ABC98005EE2CE /* HypnoViewController.m */,
 				EDF57CBF160ABBB0005EE2CE /* HypnoAppDelegate.m */,
 				EDF57CB6160ABBB0005EE2CE /* Supporting Files */,
+				EDF57CCC160AC211005EE2CE /* TimeViewController.h */,
+				EDF57CCD160AC211005EE2CE /* TimeViewController.m */,
+				EDF57CD3160AC911005EE2CE /* TimeViewController.xib */,
 			);
 			path = HypnoTime;
 			sourceTree = "<group>";
@@ -143,6 +161,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EDF57CBA160ABBB0005EE2CE /* InfoPlist.strings in Resources */,
+				EDF57CD4160AC911005EE2CE /* TimeViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -155,6 +174,9 @@
 			files = (
 				EDF57CBC160ABBB0005EE2CE /* main.m in Sources */,
 				EDF57CC0160ABBB0005EE2CE /* HypnoAppDelegate.m in Sources */,
+				EDF57CC8160ABC98005EE2CE /* HypnoViewController.m in Sources */,
+				EDF57CCB160ABD71005EE2CE /* HypnosisView.m in Sources */,
+				EDF57CCE160AC211005EE2CE /* TimeViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
