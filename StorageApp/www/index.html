@@ -17,26 +17,149 @@
     specific language governing permissions and limitations
     under the License.
 -->
+<!DOCTYPE html>
 <html>
-    <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-        <meta name="format-detection" content="telephone=no" />
-        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
-        <link rel="stylesheet" type="text/css" href="css/index.css" />
-        <title>Hello World</title>
-    </head>
-    <body>
-        <div class="app">
-            <h1>Apache Cordova</h1>
-            <div id="deviceready" class="blink">
-                <p class="event listening">Connecting to Device</p>
-                <p class="event received">Device is Ready</p>
-            </div>
-        </div>
-        <script type="text/javascript" src="cordova-2.2.0.js"></script>
-        <script type="text/javascript" src="js/index.js"></script>
-        <script type="text/javascript">
-            app.initialize();
-        </script>
-    </body>
+  <head>
+    <title>Storage Example</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+    <script type="text/javascript" charset="utf-8" src="cordova-2.2.0.js"></script>
+    <script type="text/javascript" charset="utf-8" src="js/jquery.js"></script>
+    <script type="text/javascript" charset="utf-8">
+        $(function(){
+            // Wait for Cordova to load
+            document.addEventListener("deviceready", onDeviceReady, false);
+            
+            // Create the database
+            function populateDB(tx) {
+                
+                var time = new Date().getTime();
+                
+                tx.executeSql('DROP TABLE IF EXISTS DEMO');
+                tx.executeSql('CREATE TABLE IF NOT EXISTS DEMO (id unique, data, timestamp)');
+                tx.executeSql('INSERT INTO DEMO (id, data, timestamp) VALUES (1, "First row", ' + time + ')');
+                tx.executeSql('INSERT INTO DEMO (id, data, timestamp) VALUES (2, "Second row", ' + time + ')');
+                
+            }
+
+            //Transaction error callback
+            function errorCB(err) {
+                console.log("Error processing SQL: "+err.code);
+            }        
+            
+            // Cordova is ready
+            function onDeviceReady() {
+                
+                for (var i=0; i<len; i++){
+                    var item = window.localStorage.getItem(i);
+                    console.log(item);
+                    $('#local-data').append(item + '<br/>');
+                }
+            
+                var db = window.openDatabase("Database", "1.0", "Cordova Demo", 200000);
+                db.transaction(populateDB, errorCB);
+            }
+            
+            //Insert record into DB
+            function insertDB(tx) {
+                var time = new Date().getTime();
+                tx.executeSql('INSERT INTO DEMO (data, timestamp) VALUES ("Record", ' + time + ')');
+            } 
+            
+            //Return ALL records in DB
+            function getAll(tx){
+                tx.executeSql('SELECT * FROM DEMO', [], getAllSuccess, errorCB);
+            }
+            
+            function getAllSuccess(tx, results) {
+                var len = results.rows.length;
+                
+                //clear data div
+                $('#db-data').html('');
+                
+                console.log("DEMO table: " + len + " rows found.");
+                for (var i=0; i<len; i++){
+                    console.log("Row = " + i + " ID = " + results.rows.item(i).id + " Data =  " + results.rows.item(i).data + " Time = " + results.rows.item(i).timestamp);
+                    $('#db-data').append(results.rows.item(i).data + ' - ' + results.rows.item(i).timestamp + '<br/>');
+                }
+            }
+    
+            /*------------------------------ EVENTS ----------------------------------*/
+            //Add a record
+            $('.add').on('click', function(tx){ 
+                var db = window.openDatabase("Database", "1.0", "Cordova Demo", 200000);
+                db.transaction(insertDB, errorCB);        
+            });
+            
+            //Return all records in DB
+            $('.results').on('click', function(){
+                var db = window.openDatabase("Database", "1.0", "Cordova Demo", 200000);
+                db.transaction(getAll, errorCB);
+            });
+            
+            //Add a record to local storage
+            //!TODO find a way to do this with a single click event by somehow passing a callback function to the
+            //local storage setItem method that refreshes the data in the local data div
+            $('.add-local').mousedown(function(){
+                var StorageLength = window.localStorage.length;
+                var time = new Date().getTime();
+                console.log(StorageLength);
+                
+                window.localStorage.setItem(StorageLength, "record-" + StorageLength);
+                
+            });
+            
+            $('.add-local').mouseup(function(){
+                $("#local-data").html("");
+                var StorageLength = window.localStorage.length;
+                for (var i=0; i<StorageLength; i++){
+                    var item = window.localStorage.getItem(i);
+                    console.log(item);
+                    
+                    if(item != null){
+                        $("#local-data").append(item + '<br/>');
+                    }
+                
+                }
+            });
+            
+            //Clear local storage
+            $('.clear-local').on('click', function(){
+                window.localStorage.clear();
+                $('#local-data').html('<p>There are currently no items in local storage.</p>');
+            });
+            
+            //Refresh
+            $('.refresh').on('click', function(){
+                var StorageLength = window.localStorage.length;
+                $("#local-data").html("");
+                for (var i=0; i<StorageLength; i++){
+                    var item = window.localStorage.getItem(i);
+                    console.log(item);
+                    
+                    if(item != null){
+                        $("#local-data").append(item + '<br/>');
+                    }
+                
+                }
+            });
+    });
+
+    </script>
+  </head>
+  <body>
+    <h1>Cordova Data Storage Demo</h1>
+    <h2>W3C Web SQL</h2>
+    <p>NOTE: This data storage is not persistent.</p>
+    <button type="button" class="btn btn-primary add" />Add Record</button>
+    <button type="button" class="btn btn-primary results">Display Records</button>
+    <div id="db-data"></div>
+    <h2>W3C Local Storage</h2>
+    <button class="btn btn-primary add-local">Add Record</button>
+    <button class="btn btn-primary clear-local">Clear Records</button>
+    <button class="btn btn-primary refresh">Refresh</button>
+    <div id="local-data">
+        <p>There are currently no items in local storage.</p>
+    </div>
+  </body>
 </html>
+
