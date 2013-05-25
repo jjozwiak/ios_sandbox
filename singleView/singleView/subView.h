@@ -1,5 +1,5 @@
 //
-//  singleViewViewController.h
+//  subView.h
 //  singleView
 //
 //  Created by Jason Jozwiak on 11/27/12.
@@ -7,10 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-int test = 1;
-@interface singleViewViewController : UIViewController
 
-@property int hidden;
-
+@interface subView : UIView
 
 @end

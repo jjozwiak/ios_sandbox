@@ -1,0 +1,300 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BDC6035216A3847E00E69DC8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDC6035116A3847E00E69DC8 /* UIKit.framework */; };
+		BDC6035416A3847E00E69DC8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDC6035316A3847E00E69DC8 /* Foundation.framework */; };
+		BDC6035616A3847E00E69DC8 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDC6035516A3847E00E69DC8 /* CoreGraphics.framework */; };
+		BDC6035C16A3847E00E69DC8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BDC6035A16A3847E00E69DC8 /* InfoPlist.strings */; };
+		BDC6035E16A3847E00E69DC8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BDC6035D16A3847E00E69DC8 /* main.m */; };
+		BDC6036216A3847E00E69DC8 /* scrollPickerAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BDC6036116A3847E00E69DC8 /* scrollPickerAppDelegate.m */; };
+		BDC6036416A3847E00E69DC8 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = BDC6036316A3847E00E69DC8 /* Default.png */; };
+		BDC6036616A3847E00E69DC8 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BDC6036516A3847E00E69DC8 /* Default@2x.png */; };
+		BDC6036816A3847E00E69DC8 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BDC6036716A3847E00E69DC8 /* Default-568h@2x.png */; };
+		BDC6036B16A3847E00E69DC8 /* scrollPickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BDC6036A16A3847E00E69DC8 /* scrollPickerViewController.m */; };
+		BDC6036E16A3847E00E69DC8 /* scrollPickerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BDC6036C16A3847E00E69DC8 /* scrollPickerViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		BDC6034D16A3847E00E69DC8 /* scrollPicker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = scrollPicker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BDC6035116A3847E00E69DC8 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		BDC6035316A3847E00E69DC8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		BDC6035516A3847E00E69DC8 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		BDC6035916A3847E00E69DC8 /* scrollPicker-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "scrollPicker-Info.plist"; sourceTree = "<group>"; };
+		BDC6035B16A3847E00E69DC8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		BDC6035D16A3847E00E69DC8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		BDC6035F16A3847E00E69DC8 /* scrollPicker-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "scrollPicker-Prefix.pch"; sourceTree = "<group>"; };
+		BDC6036016A3847E00E69DC8 /* scrollPickerAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = scrollPickerAppDelegate.h; sourceTree = "<group>"; };
+		BDC6036116A3847E00E69DC8 /* scrollPickerAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = scrollPickerAppDelegate.m; sourceTree = "<group>"; };
+		BDC6036316A3847E00E69DC8 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		BDC6036516A3847E00E69DC8 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		BDC6036716A3847E00E69DC8 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		BDC6036916A3847E00E69DC8 /* scrollPickerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = scrollPickerViewController.h; sourceTree = "<group>"; };
+		BDC6036A16A3847E00E69DC8 /* scrollPickerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = scrollPickerViewController.m; sourceTree = "<group>"; };
+		BDC6036D16A3847E00E69DC8 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/scrollPickerViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BDC6034A16A3847E00E69DC8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BDC6035216A3847E00E69DC8 /* UIKit.framework in Frameworks */,
+				BDC6035416A3847E00E69DC8 /* Foundation.framework in Frameworks */,
+				BDC6035616A3847E00E69DC8 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BDC6034216A3847E00E69DC8 = {
+			isa = PBXGroup;
+			children = (
+				BDC6035716A3847E00E69DC8 /* scrollPicker */,
+				BDC6035016A3847E00E69DC8 /* Frameworks */,
+				BDC6034E16A3847E00E69DC8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BDC6034E16A3847E00E69DC8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BDC6034D16A3847E00E69DC8 /* scrollPicker.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BDC6035016A3847E00E69DC8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BDC6035116A3847E00E69DC8 /* UIKit.framework */,
+				BDC6035316A3847E00E69DC8 /* Foundation.framework */,
+				BDC6035516A3847E00E69DC8 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BDC6035716A3847E00E69DC8 /* scrollPicker */ = {
+			isa = PBXGroup;
+			children = (
+				BDC6036016A3847E00E69DC8 /* scrollPickerAppDelegate.h */,
+				BDC6036116A3847E00E69DC8 /* scrollPickerAppDelegate.m */,
+				BDC6036916A3847E00E69DC8 /* scrollPickerViewController.h */,
+				BDC6036A16A3847E00E69DC8 /* scrollPickerViewController.m */,
+				BDC6036C16A3847E00E69DC8 /* scrollPickerViewController.xib */,
+				BDC6035816A3847E00E69DC8 /* Supporting Files */,
+			);
+			path = scrollPicker;
+			sourceTree = "<group>";
+		};
+		BDC6035816A3847E00E69DC8 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BDC6035916A3847E00E69DC8 /* scrollPicker-Info.plist */,
+				BDC6035A16A3847E00E69DC8 /* InfoPlist.strings */,
+				BDC6035D16A3847E00E69DC8 /* main.m */,
+				BDC6035F16A3847E00E69DC8 /* scrollPicker-Prefix.pch */,
+				BDC6036316A3847E00E69DC8 /* Default.png */,
+				BDC6036516A3847E00E69DC8 /* Default@2x.png */,
+				BDC6036716A3847E00E69DC8 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BDC6034C16A3847E00E69DC8 /* scrollPicker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BDC6037116A3847E00E69DC8 /* Build configuration list for PBXNativeTarget "scrollPicker" */;
+			buildPhases = (
+				BDC6034916A3847E00E69DC8 /* Sources */,
+				BDC6034A16A3847E00E69DC8 /* Frameworks */,
+				BDC6034B16A3847E00E69DC8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = scrollPicker;
+			productName = scrollPicker;
+			productReference = BDC6034D16A3847E00E69DC8 /* scrollPicker.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BDC6034416A3847E00E69DC8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = scrollPicker;
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = "Jason Jozwiak";
+			};
+			buildConfigurationList = BDC6034716A3847E00E69DC8 /* Build configuration list for PBXProject "scrollPicker" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = BDC6034216A3847E00E69DC8;
+			productRefGroup = BDC6034E16A3847E00E69DC8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BDC6034C16A3847E00E69DC8 /* scrollPicker */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BDC6034B16A3847E00E69DC8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BDC6035C16A3847E00E69DC8 /* InfoPlist.strings in Resources */,
+				BDC6036416A3847E00E69DC8 /* Default.png in Resources */,
+				BDC6036616A3847E00E69DC8 /* Default@2x.png in Resources */,
+				BDC6036816A3847E00E69DC8 /* Default-568h@2x.png in Resources */,
+				BDC6036E16A3847E00E69DC8 /* scrollPickerViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BDC6034916A3847E00E69DC8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BDC6035E16A3847E00E69DC8 /* main.m in Sources */,
+				BDC6036216A3847E00E69DC8 /* scrollPickerAppDelegate.m in Sources */,
+				BDC6036B16A3847E00E69DC8 /* scrollPickerViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		BDC6035A16A3847E00E69DC8 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BDC6035B16A3847E00E69DC8 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		BDC6036C16A3847E00E69DC8 /* scrollPickerViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BDC6036D16A3847E00E69DC8 /* en */,
+			);
+			name = scrollPickerViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BDC6036F16A3847E00E69DC8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		BDC6037016A3847E00E69DC8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BDC6037216A3847E00E69DC8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "scrollPicker/scrollPicker-Prefix.pch";
+				INFOPLIST_FILE = "scrollPicker/scrollPicker-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		BDC6037316A3847E00E69DC8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "scrollPicker/scrollPicker-Prefix.pch";
+				INFOPLIST_FILE = "scrollPicker/scrollPicker-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BDC6034716A3847E00E69DC8 /* Build configuration list for PBXProject "scrollPicker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BDC6036F16A3847E00E69DC8 /* Debug */,
+				BDC6037016A3847E00E69DC8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BDC6037116A3847E00E69DC8 /* Build configuration list for PBXNativeTarget "scrollPicker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BDC6037216A3847E00E69DC8 /* Debug */,
+				BDC6037316A3847E00E69DC8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BDC6034416A3847E00E69DC8 /* Project object */;
+}

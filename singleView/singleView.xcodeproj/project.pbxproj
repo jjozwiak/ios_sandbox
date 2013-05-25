@@ -18,6 +18,8 @@
 		BD3B5376166560180032FA3F /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BD3B5375166560180032FA3F /* Default-568h@2x.png */; };
 		BD3B5379166560180032FA3F /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD3B5377166560180032FA3F /* MainStoryboard.storyboard */; };
 		BD3B537C166560180032FA3F /* singleViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BD3B537B166560180032FA3F /* singleViewViewController.m */; };
+		BD3B5384166569E90032FA3F /* subView.m in Sources */ = {isa = PBXBuildFile; fileRef = BD3B5383166569E90032FA3F /* subView.m */; };
+		BD3B538A166579FB0032FA3F /* menu.plist in Resources */ = {isa = PBXBuildFile; fileRef = BD3B5389166579FB0032FA3F /* menu.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +39,9 @@
 		BD3B5378166560180032FA3F /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		BD3B537A166560180032FA3F /* singleViewViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = singleViewViewController.h; sourceTree = "<group>"; };
 		BD3B537B166560180032FA3F /* singleViewViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = singleViewViewController.m; sourceTree = "<group>"; };
+		BD3B5382166569E90032FA3F /* subView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = subView.h; sourceTree = "<group>"; };
+		BD3B5383166569E90032FA3F /* subView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = subView.m; sourceTree = "<group>"; };
+		BD3B5389166579FB0032FA3F /* menu.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = menu.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +93,9 @@
 				BD3B5377166560180032FA3F /* MainStoryboard.storyboard */,
 				BD3B537A166560180032FA3F /* singleViewViewController.h */,
 				BD3B537B166560180032FA3F /* singleViewViewController.m */,
+				BD3B5389166579FB0032FA3F /* menu.plist */,
+				BD3B5382166569E90032FA3F /* subView.h */,
+				BD3B5383166569E90032FA3F /* subView.m */,
 				BD3B5366166560180032FA3F /* Supporting Files */,
 			);
 			path = singleView;
@@ -164,6 +172,7 @@
 				BD3B5374166560180032FA3F /* Default@2x.png in Resources */,
 				BD3B5376166560180032FA3F /* Default-568h@2x.png in Resources */,
 				BD3B5379166560180032FA3F /* MainStoryboard.storyboard in Resources */,
+				BD3B538A166579FB0032FA3F /* menu.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -177,6 +186,7 @@
 				BD3B536C166560180032FA3F /* main.m in Sources */,
 				BD3B5370166560180032FA3F /* singleViewAppDelegate.m in Sources */,
 				BD3B537C166560180032FA3F /* singleViewViewController.m in Sources */,
+				BD3B5384166569E90032FA3F /* subView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
