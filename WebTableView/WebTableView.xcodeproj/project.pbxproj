@@ -18,6 +18,7 @@
 		BDE7BEB71751360A00A5D4DC /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BDE7BEB61751360A00A5D4DC /* Default-568h@2x.png */; };
 		BDE7BEBA1751360A00A5D4DC /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BDE7BEB81751360A00A5D4DC /* MainStoryboard.storyboard */; };
 		BDE7BEBD1751360A00A5D4DC /* WebTableViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BDE7BEBC1751360A00A5D4DC /* WebTableViewViewController.m */; };
+		BDE7BECE1751789700A5D4DC /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BDE7BECD1751789700A5D4DC /* TableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +38,8 @@
 		BDE7BEB91751360A00A5D4DC /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		BDE7BEBB1751360A00A5D4DC /* WebTableViewViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WebTableViewViewController.h; sourceTree = "<group>"; };
 		BDE7BEBC1751360A00A5D4DC /* WebTableViewViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WebTableViewViewController.m; sourceTree = "<group>"; };
+		BDE7BECC1751789700A5D4DC /* TableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewController.h; sourceTree = "<group>"; };
+		BDE7BECD1751789700A5D4DC /* TableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +92,8 @@
 				BDE7BEBB1751360A00A5D4DC /* WebTableViewViewController.h */,
 				BDE7BEBC1751360A00A5D4DC /* WebTableViewViewController.m */,
 				BDE7BEA71751360A00A5D4DC /* Supporting Files */,
+				BDE7BECC1751789700A5D4DC /* TableViewController.h */,
+				BDE7BECD1751789700A5D4DC /* TableViewController.m */,
 			);
 			path = WebTableView;
 			sourceTree = "<group>";
@@ -177,6 +182,7 @@
 				BDE7BEAD1751360A00A5D4DC /* main.m in Sources */,
 				BDE7BEB11751360A00A5D4DC /* WebTableViewAppDelegate.m in Sources */,
 				BDE7BEBD1751360A00A5D4DC /* WebTableViewViewController.m in Sources */,
+				BDE7BECE1751789700A5D4DC /* TableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -299,6 +305,7 @@
 				BDE7BEC21751360A00A5D4DC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
