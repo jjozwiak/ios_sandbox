@@ -19,6 +19,9 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    self.restuarantNameLabel.text = [self.restuarantDetail objectForKey:@"name"];
+    [self.restuarantImageView setImageWithURL:[NSURL URLWithString:[self.restuarantDetail objectForKey:@"icon"]]];
+    self.restuarantAddressView.text = [self.restuarantDetail objectForKey:@"formatted_address"];
 }
 
 - (void)didReceiveMemoryWarning
