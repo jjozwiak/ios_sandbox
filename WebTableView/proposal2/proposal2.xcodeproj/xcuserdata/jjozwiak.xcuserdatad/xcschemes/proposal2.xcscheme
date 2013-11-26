@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "BDE23A0B15E41C7C001B157F"
-               BuildableName = "RandomPossessions"
-               BlueprintName = "RandomPossessions"
-               ReferencedContainer = "container:RandomPossessions.xcodeproj">
+               BlueprintIdentifier = "BDE8B91F17CAF437004B3AAE"
+               BuildableName = "proposal2.app"
+               BlueprintName = "proposal2"
+               ReferencedContainer = "container:proposal2.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -32,10 +32,10 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "BDE23A0B15E41C7C001B157F"
-            BuildableName = "RandomPossessions"
-            BlueprintName = "RandomPossessions"
-            ReferencedContainer = "container:RandomPossessions.xcodeproj">
+            BlueprintIdentifier = "BDE8B91F17CAF437004B3AAE"
+            BuildableName = "proposal2.app"
+            BlueprintName = "proposal2"
+            ReferencedContainer = "container:proposal2.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -51,10 +51,10 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "BDE23A0B15E41C7C001B157F"
-            BuildableName = "RandomPossessions"
-            BlueprintName = "RandomPossessions"
-            ReferencedContainer = "container:RandomPossessions.xcodeproj">
+            BlueprintIdentifier = "BDE8B91F17CAF437004B3AAE"
+            BuildableName = "proposal2.app"
+            BlueprintName = "proposal2"
+            ReferencedContainer = "container:proposal2.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -69,10 +69,10 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "BDE23A0B15E41C7C001B157F"
-            BuildableName = "RandomPossessions"
-            BlueprintName = "RandomPossessions"
-            ReferencedContainer = "container:RandomPossessions.xcodeproj">
+            BlueprintIdentifier = "BDE8B91F17CAF437004B3AAE"
+            BuildableName = "proposal2.app"
+            BlueprintName = "proposal2"
+            ReferencedContainer = "container:proposal2.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
